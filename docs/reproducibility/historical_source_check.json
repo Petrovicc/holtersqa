@@ -1,0 +1,10 @@
+{
+  "historical_archive": "EKG.rar",
+  "older_archive_sha256": "e08d28ef6b918f8f3809e5acec3cd0609199d9b83ccf9a0e4bb4903810ab5dbe",
+  "archived_member": "ekg_monitor/application/training_service.py",
+  "older_training_source_sha256": "3b134c463c68c58161c52ed595fcfc171306d9753246568ebc33a0c8957e8621",
+  "older_source_has_evaluation_candidates_export": false,
+  "current_training_source_sha256": "0f9a0803489f8a645aaf8af662c70235e917bbdced0bb767cbc1c13ab6d8a886",
+  "historical_file_identity_for_new_top_model_confirmed": false,
+  "historical_per_epoch_weight_hashes_available": false
+}

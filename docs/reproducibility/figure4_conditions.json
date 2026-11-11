@@ -1,0 +1,36 @@
+{
+  "date_of_figure_capture": "2026-11-09",
+  "source_files_relative_to_previous_manuscripts_archive": {
+    ".codex_revision/figure4_replay_stdout.txt": "b20583c6df17da40db447593ec9e96188871b7d89c04e3d59e31fcf378f7f177",
+    ".codex_revision/figure4_replay_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".codex_revision/figure_audit.json": "f213ab2ab319cb62d27db06af98b4944ba3d3b2c4ca7c8ac482e1234ab8d8ff8",
+    ".codex_revision/launch_server_for_capture.py": "8a7f5c5f03691b88698eefce9ee5b4ebd9ffe7b3c7b27aefeac8fd740893a46d"
+  },
+  "environment": "TCP 127.0.0.1:50070",
+  "records": [
+    "100001",
+    "100002",
+    "103001"
+  ],
+  "distinct_people": [
+    "100",
+    "103"
+  ],
+  "requested_packet_seconds": 2,
+  "effective_inference_step_with_contiguous_2s_packets_seconds": 2,
+  "full_window_before_inference_seconds": 10,
+  "illustrated_record_103001_interval_seconds": [
+    56,
+    66
+  ],
+  "recorded_client_states": [
+    "all three entered streaming",
+    "connection closure during server shutdown",
+    "automatic reconnect disabled"
+  ],
+  "measured_total_run_duration_seconds": null,
+  "end_to_end_latency_distribution_ms": null,
+  "packet_loss_or_continuity_summary": null,
+  "validated_reconnect_time_seconds": null,
+  "limits": "Retained stdout contains no timestamped sequence/ACK or per-inference durations. Older binary packet archives describe different, single-record sessions. File creation/modification times and screenshots cannot establish performance distributions."
+}
