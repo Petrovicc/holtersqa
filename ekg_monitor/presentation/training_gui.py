@@ -71,9 +71,9 @@ class TrainingApp:
                 tag="training.confusion_texture",
             )
         self.theme = configure_global_theme(dpg)
-        with dpg.window(tag="training.main", label="ECG Model Training"):
+        with dpg.window(tag="training.main", label="HolterSQA Model Training"):
             with dpg.group(horizontal=True):
-                dpg.add_text("ECG SIGNAL-QUALITY MODEL TRAINING", tag="training.heading", color=ACCENT)
+                dpg.add_text("HolterSQA Model Training", tag="training.heading", color=ACCENT)
                 dpg.add_text("Idle", tag="training.status", color=MUTED)
                 dpg.add_button(
                     tag="training.theme_toggle",
@@ -92,7 +92,7 @@ class TrainingApp:
         self.theme.bind_heading("training.heading")
         self.theme.bind_role("training.loss_series", "loss")
         self.theme.bind_role("training.accuracy_series", "accuracy")
-        dpg.create_viewport(title="ECG Model Training", width=1450, height=920, min_width=1080, min_height=720)
+        dpg.create_viewport(title="HolterSQA Model Training", width=1450, height=920, min_width=1080, min_height=720)
         dpg.setup_dearpygui()
         dpg.show_viewport()
         dpg.set_primary_window("training.main", True)

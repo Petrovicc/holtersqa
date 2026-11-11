@@ -1,4 +1,6 @@
-# Reproducing the reported ECG signal-quality result
+# Reproducing the HolterSQA ECG signal-quality result
+
+The HolterSQA source code and the scripts used for these checks are available in the [project repository](https://github.com/Petrovicc/holtersqa).
 
 The reported result is the internal subject-independent evaluation of a specific saved multilayer perceptron (MLP). It includes 2,739 overlapping windows from six people. The saved weights give 1,927 correct predictions and 812 disagreements with the consensus reference. The application also supports logistic regression, random forests and gradient boosting. The earlier exploratory search over 270 configurations used a different preprocessing and evaluation protocol. Its scores cannot establish which model performs best under the protocol reported here.
 

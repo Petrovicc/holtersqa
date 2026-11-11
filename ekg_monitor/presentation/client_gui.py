@@ -50,9 +50,9 @@ class ClientApp:
             if self.initial_dataset_root
             else Path.cwd() / "butqdb"
         )
-        with dpg.window(tag="client.main", label="Holter Client Simulator"):
+        with dpg.window(tag="client.main", label="HolterSQA Client Simulator"):
             with dpg.group(horizontal=True):
-                dpg.add_text("HOLTER SIMULATOR", tag="client.heading", color=ACCENT)
+                dpg.add_text("HolterSQA Client Simulator", tag="client.heading", color=ACCENT)
                 dpg.add_text("Disconnected", tag="client.status", color=MUTED)
                 dpg.add_button(
                     tag="client.theme_toggle",
@@ -157,7 +157,7 @@ class ClientApp:
         self.theme.bind_heading("client.heading")
         self.theme.bind_heading("client.alert_heading")
         self.theme.bind_role("client.ecg_series", "raw")
-        dpg.create_viewport(title="Holter Client Simulator", width=1250, height=780, min_width=950, min_height=620)
+        dpg.create_viewport(title="HolterSQA Client Simulator", width=1250, height=780, min_width=950, min_height=620)
         dpg.setup_dearpygui()
         dpg.show_viewport()
         dpg.set_primary_window("client.main", True)

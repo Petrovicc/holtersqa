@@ -73,9 +73,9 @@ class ServerApp:
         with dpg.texture_registry(tag="server.subject_textures"):
             pass
         self.theme = configure_global_theme(dpg)
-        with dpg.window(tag="server.main", label="ECG Monitoring Server"):
+        with dpg.window(tag="server.main", label="HolterSQA Monitoring Server"):
             with dpg.group(horizontal=True):
-                dpg.add_text("ECG MONITORING SERVER", tag="server.heading", color=ACCENT)
+                dpg.add_text("HolterSQA Monitoring Server", tag="server.heading", color=ACCENT)
                 dpg.add_text("Stopped", tag="server.status", color=MUTED)
                 dpg.add_button(
                     tag="server.theme_toggle",
@@ -90,7 +90,7 @@ class ServerApp:
                     self._ml_tab()
         self.theme.bind_heading("server.heading")
         dpg.create_viewport(
-            title="ECG Monitoring Server",
+            title="HolterSQA Monitoring Server",
             width=1500,
             height=940,
             min_width=1120,

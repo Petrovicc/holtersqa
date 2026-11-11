@@ -25,5 +25,16 @@
     "feature_count": 64,
     "predicted_quality_class": 2
   },
+  "paper_snapshot_0_1_1": {
+    "verified_on": "2026-11-11",
+    "launcher_initialization": "Each normal launcher constructed its Dear PyGui application. The viewport, primary window and heading were checked during initialization with window display suppressed.",
+    "observed_titles": {
+      "run_client.py": "HolterSQA Client Simulator",
+      "run_server.py": "HolterSQA Monitoring Server",
+      "run_training.py": "HolterSQA Model Training"
+    },
+    "loopback_verification": "One replay client returned class 2 after receiving a complete 10-second window from record 100001.",
+    "public_reconstruction": "All 2,739 class predictions matched. Maximum absolute probability difference was 1.22e-15."
+  },
   "limits": "No new training, clinical evaluation, network benchmark or operating-system compatibility study was performed."
 }

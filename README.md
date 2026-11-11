@@ -1,10 +1,12 @@
-# QualiECG
+# HolterSQA
 
-**Quality-Aware ECG Telemonitoring Framework**
+**A Framework for ECG Signal Quality Assessment and Telemonitoring**
+
+[Paper snapshot 0.1.1](https://github.com/Petrovicc/holtersqa/releases/tag/paper-v0.1.1)
 
 **Research prototype—not for clinical decision-making.**
 
-QualiECG combines an offline training application with a replay client and a physician-facing server. It classifies the technical usability of a single-lead ECG into three quality classes using ECG and synchronized triaxial acceleration. The implementation supports logistic regression, random forest, gradient boosting and multilayer perceptrons (MLPs). The paper reports internal subject-independent evaluation of one saved MLP and demonstrates its transfer to the monitoring server. An earlier 270-configuration search used a different protocol. The paper result establishes neither a matched comparison between all four families nor the incremental value of individual feature groups.
+HolterSQA combines an offline training application with a replay client and a physician-facing server. It classifies the technical usability of a single-lead ECG into three quality classes using ECG and synchronized triaxial acceleration. The implementation supports logistic regression, random forest, gradient boosting and multilayer perceptrons (MLPs). The paper reports internal subject-independent evaluation of one saved MLP and demonstrates its transfer to the monitoring server. An earlier 270-configuration search used a different protocol. The paper result establishes neither a matched comparison between all four families nor the incremental value of individual feature groups.
 
 ## Install
 
@@ -52,11 +54,11 @@ For the graphical applications, start the server, import `artifacts/model_bundle
 To reconstruct the reported evaluation from the public recordings, use the dataset's `SHA256SUMS.txt` and original files for records 104001, 114001, 115001, 123001, 125001 and 126001. The script verifies input hashes, extracts features from the annotated windows, applies the saved model and compares the resulting window IDs, class predictions and probabilities with the released reference CSV.
 
 ```powershell
-.\\.venv\\Scripts\\python.exe scripts/reproduce_public.py --dataset-root "D:\\data\\butqdb" --bundle-dir artifacts --output-dir public_check
+.\.venv\Scripts\python.exe scripts/reproduce_public.py --dataset-root "D:\data\butqdb" --bundle-dir artifacts --output-dir public_check
 ```
 
 The evaluation contains 2,739 windows, 1,927 correct predictions and 812 disagreements. Accuracy was 70.354%, balanced accuracy 83.814% and macro F1 70.801%. Class 2 precision was 27.1% and F1 was 41.4%. All 165 Class 3 evaluation windows came from a single person. There were zero Class 3-to-1 predictions in that partition and three Class 3-to-2 predictions. Window counts do not measure clinical alerts or time spent reviewing recordings. Scientific scope, reconstruction steps and unresolved historical details are recorded in [paper reproducibility](docs/paper_reproducibility.md).
 
 ## Availability
 
-See [software license status](LICENSE_STATUS.md) and [data sources](DATA_SOURCES.md) for separate code and data terms. The public project name QualiECG was introduced for this paper snapshot. The source application titles are Holter Client Simulator, ECG Monitoring Server and ECG Model Training.
+See [software license status](LICENSE_STATUS.md) and [data sources](DATA_SOURCES.md) for separate code and data terms. The three applications are HolterSQA Client Simulator, HolterSQA Monitoring Server and HolterSQA Model Training.

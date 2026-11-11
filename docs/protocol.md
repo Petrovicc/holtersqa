@@ -1,4 +1,4 @@
-# Replay protocol
+# HolterSQA replay protocol
 
 A client opens a TCP connection and sends a `hello` frame containing its session identifier, record identifier, ECG and accelerometer headers, and requested packet duration. The server acknowledges it with `hello_ack` and the effective duration and model window. A record identifier can refer to another recording from a person already represented by a different record.
 
