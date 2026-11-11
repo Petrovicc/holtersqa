@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-11",
+  "purpose": "Separate release verification with a clean copy. One functional replay on the local machine.",
+  "installation": {
+    "os": "Windows 11 x64",
+    "implementation": "CPython",
+    "python": "3.13.11",
+    "fresh_environment": true,
+    "system_site_packages": false,
+    "direct_dependencies": 10,
+    "pip_check": "No broken requirements found."
+  },
+  "inputs": {
+    "record": "100001",
+    "dataset": "BUT QDB 1.0.0 from local PhysioNet collection",
+    "bundle": "artifacts/model_bundle.joblib",
+    "bundle_sha256": "0b0adf27512aa4812d43f4fcc9214d7e8faed6a321c635a0b30a75925cda45df"
+  },
+  "observed": {
+    "connection": "IPv4 loopback",
+    "clients": 1,
+    "configured_packet_seconds": 2,
+    "server_history_seconds": 10,
+    "model_window_seconds": 10,
+    "feature_count": 64,
+    "predicted_quality_class": 2
+  },
+  "limits": "No new training, clinical evaluation, network benchmark or operating-system compatibility study was performed."
+}

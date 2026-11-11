@@ -1,0 +1,2 @@
+# Keep archive bytes stable across Windows and POSIX checkouts for SHA-256 verification.
+* -text

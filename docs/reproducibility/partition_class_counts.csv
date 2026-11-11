@@ -1,0 +1,7 @@
+partition,resampling,subject_ids,windows,class_1,class_2,class_3
+training,before,100|103|111|113|118|121|122|124,35591,20302,14411,878
+training,after,100|103|111|113|118|121|122|124,60906,20302,20302,20302
+validation,before,105,26122,10729,5926,9467
+validation,after,105,32187,10729,10729,10729
+reported_evaluation,before,104|114|115|123|125|126,2739,2248,326,165
+reported_evaluation,after,104|114|115|123|125|126,2739,2248,326,165

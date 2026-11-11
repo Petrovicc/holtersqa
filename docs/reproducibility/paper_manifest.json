@@ -1,0 +1,213 @@
+{
+  "audit_date": "2026-11-11",
+  "dataset_source": "https://physionet.org/content/butqdb/1.0.0/",
+  "input_paths_relative_to_project_root": {
+    "Models/New Top/model_bundle.joblib": "0b0adf27512aa4812d43f4fcc9214d7e8faed6a321c635a0b30a75925cda45df",
+    "Models/New Top/training_results.json": "1f12b8171616b472a6f91d15c758f225d127d916abf1d8a49362fb56ebe2366a",
+    "DBs/newDB.parquet": "2a87a3e6b634be3c5ef326a97ca1cbec7cebff775a537b7af7279f7575be2ce9",
+    "DBs/newDB.parquet.config.json": "d711b836d72050ddb6244f520b9dad1280c3781eaef10aa270308bebe071c2be",
+    "Models/New Top/model_bundle.json": "9fb349f9def18817417f8d2ec070e0f1738777bbe151dc95e829805d127ecbe0",
+    "DBs/newDB.parquet.diagnostics.json": "a8c8ef9a7f77217bfb1d9c1770d44dd4d0188e31b3f96a96a2f2531bd1a2e6c1",
+    "butqdb/SHA256SUMS.txt": "e02148c3e52e8bd99b4d94720c7d415eac844795f8610082579f59990113ce8b"
+  },
+  "code_paths_relative_to_code_root": {
+    "ekg_monitor/application/training_service.py": "0f9a0803489f8a645aaf8af662c70235e917bbdced0bb767cbc1c13ab6d8a886",
+    "ekg_monitor/application/signal_analysis.py": "5340960c8bce543575b7eeedaf0dba977e4b7d8b65e386fb44dba536e7c31d18",
+    "ekg_monitor/infrastructure/model_repository.py": "1f6e43371c92ec5fca0ac2678ff287bac6833f8516eb837712c4e488a01dcbc9",
+    "ekg_monitor/infrastructure/butqdb_repository.py": "8a1388aeedc22bcb5710923dd2fca2e51e76d816b892ac70a244ff7cc5378b84",
+    "ekg_monitor/application/server_service.py": "5b24219b238ca1cbcecacca58bb5bc5f5ff6697fb36def3f7a7248ec31f8809f",
+    "ekg_monitor/application/client_service.py": "d1b06e736475158bf844246a3d5ea1f0a3f4e41c2efeb83f6dfaebec61d46be1",
+    "ekg_monitor/infrastructure/protocol.py": "8a407f31e600fbc6a9ff14716b4717e3bc89f32451e575e7b482511b073314fc"
+  },
+  "run_identity": {
+    "archive_directory": "Models/New Top",
+    "bundle_sha256": "0b0adf27512aa4812d43f4fcc9214d7e8faed6a321c635a0b30a75925cda45df",
+    "format": "ekg-monitor-model/2",
+    "created_at": "2026-08-24T00:04:41.465015+00:00",
+    "historical_run_uuid": null,
+    "historical_code_commit": null,
+    "seed": 42,
+    "selected_candidate": 19
+  },
+  "reproduction_runtime": {
+    "python": "3.14.4",
+    "platform": "Windows",
+    "architecture": "AMD64",
+    "numpy": "2.2.6",
+    "scipy": "1.16.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3",
+    "pyarrow": "23.0.0",
+    "wfdb": "4.3.1",
+    "matplotlib": "3.10.8"
+  },
+  "historical_environment": {
+    "backend": "scikit-learn CPU",
+    "scikit_learn_serialization_version": "1.8.0",
+    "source_training_service_filesystem_mtime_UTC": "2026-08-23T17:41:51.175752+00:00",
+    "immutable_code_snapshot": null,
+    "complete_package_lock": null
+  },
+  "candidate_selection": {
+    "logged_candidates": 20,
+    "max_validation_objective_candidate": 19,
+    "max_reported_accuracy_candidate": 12,
+    "max_reported_balanced_accuracy_candidate": 12,
+    "max_reported_macro_f1_candidate": 12,
+    "separate_selection_of_archived_run_over_other_runs": null
+  },
+  "scaler": {
+    "n_samples_seen": 60906,
+    "all_prepared_features_finite": true,
+    "mean_verified": true,
+    "population_variance_verified": true,
+    "scale_verified": true,
+    "rtol": 1e-11,
+    "atol": 1e-09
+  },
+  "mlp": {
+    "parameters": {
+      "activation": "relu",
+      "alpha": 0.0001,
+      "batch_size": "auto",
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "early_stopping": false,
+      "epsilon": 1e-08,
+      "hidden_layer_sizes": [
+        64,
+        128,
+        64
+      ],
+      "learning_rate": "constant",
+      "learning_rate_init": 0.0010000000474974513,
+      "max_fun": 15000,
+      "max_iter": 1,
+      "momentum": 0.9,
+      "n_iter_no_change": 10,
+      "nesterovs_momentum": true,
+      "power_t": 0.5,
+      "random_state": 42,
+      "shuffle": true,
+      "solver": "adam",
+      "tol": 0.0001,
+      "validation_fraction": 0.1,
+      "verbose": false,
+      "warm_start": true
+    },
+    "hidden_activation": "relu",
+    "output_activation": "softmax",
+    "batch_size_effective": 200,
+    "completed_epochs": 103,
+    "retained_epoch": 3,
+    "weights_shapes": [
+      [
+        64,
+        64
+      ],
+      [
+        64,
+        128
+      ],
+      [
+        128,
+        64
+      ],
+      [
+        64,
+        3
+      ]
+    ],
+    "fitted_estimator_loss_curve_matches_log": true,
+    "post_restore_validation_class_support": {
+      "1": 10729,
+      "2": 10729,
+      "3": 10729
+    },
+    "post_restore_validation_confusion_matrix": [
+      [
+        10202,
+        524,
+        3
+      ],
+      [
+        1582,
+        8667,
+        480
+      ],
+      [
+        0,
+        235,
+        10494
+      ]
+    ],
+    "post_restore_validation_objective": 0.9122627147606176,
+    "epoch_5_objective": 0.9132258365178488,
+    "min_delta": 0.0010000000474974513,
+    "patience": 100,
+    "dangerous_error_coefficient": 5.999999046325684
+  },
+  "metrics": {
+    "accuracy": 0.7035414384811975,
+    "balanced_accuracy": 0.838138099992127,
+    "f1_macro": 0.7080106882781302
+  },
+  "classification_report": {
+    "1": {
+      "precision": 0.9853528628495339,
+      "recall": 0.6583629893238434,
+      "f1-score": 0.7893333333333333,
+      "support": 2248.0
+    },
+    "2": {
+      "precision": 0.2714285714285714,
+      "recall": 0.8742331288343558,
+      "f1-score": 0.41424418604651164,
+      "support": 326.0
+    },
+    "3": {
+      "precision": 0.8663101604278075,
+      "recall": 0.9818181818181818,
+      "f1-score": 0.9204545454545454,
+      "support": 165.0
+    },
+    "accuracy": 0.7035414384811975,
+    "macro avg": {
+      "precision": 0.7076971982353043,
+      "recall": 0.838138099992127,
+      "f1-score": 0.7080106882781302,
+      "support": 2739.0
+    },
+    "weighted avg": {
+      "precision": 0.8932092466016996,
+      "recall": 0.7035414384811975,
+      "f1-score": 0.7525885133203709,
+      "support": 2739.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1480,
+      762,
+      6
+    ],
+    [
+      22,
+      285,
+      19
+    ],
+    [
+      0,
+      3,
+      162
+    ]
+  ],
+  "correct_windows": 1927,
+  "discordant_windows": 812,
+  "commands": [
+    "python scripts/reproduce_paper.py --project-root PATH_TO_ARCHIVE --code-root . --output-dir paper_check",
+    "python scripts/verify_paper_waveforms.py --project-root PATH_TO_ARCHIVE --code-root . --predictions paper_check/predictions.csv --output-dir waveform_check"
+  ],
+  "preexisting_patient_derived_data_notice": "BUT QDB v1.0.0 (PhysioNet), CC BY 4.0. Source credit and transformations are in docs/paper_reproducibility.md."
+}

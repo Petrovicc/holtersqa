@@ -1,0 +1,85 @@
+{
+  "verification_date": "2026-11-11",
+  "source": "https://physionet.org/content/butqdb/1.0.0/",
+  "source_raw_paths_and_SHA256": {
+    "104001/104001_ECG.hea": "8f45ceff834ff3ca5e38b919413fc4e8db7bab2f84ee4441753a4da6e7766234",
+    "104001/104001_ECG.dat": "8b70203063f3628eeef0bd317c5ea7e96b529314f74f511dfd74114cedbe6e56",
+    "104001/104001_ACC.hea": "b3e56844bbd1d2ac81568068178d2801f3cb3ce57f622be21fbdeefaa0a7b2ca",
+    "104001/104001_ACC.dat": "f79ec0b75bc5f425e582f291ac3cd6aa3bb66dd4221788930a5c0509c3ddef5f",
+    "104001/104001_ANN.csv": "8d5925a798315c6d43d6746a90c91678f4dce6c3dfa9b05fb274dd5b06f179aa",
+    "114001/114001_ECG.hea": "e91ec565af1cdf66ea5bad118d9b7e38f2827377aa547380216405a8e2caae03",
+    "114001/114001_ECG.dat": "ece4a22a84e280677c6d59e65f6e6b9e5bbb7ddeeeed499ebfc946fbcf28d5d3",
+    "114001/114001_ACC.hea": "9a9a6a071f365fe96c271a308e1bba1acd7bfc67af19b192dc2cb6a34dadd5a7",
+    "114001/114001_ACC.dat": "4db1ac01c6105af1dcfe7e79dd1959d5264fa6c274524333ee3615c3f3a0f1f3",
+    "114001/114001_ANN.csv": "bc355448019cbeee6b81756b63e9208d82f2a001233f70bae350debdd85f2d21",
+    "115001/115001_ECG.hea": "a1c8efa91adfdfb1db539ae1f63f651165554056db557d1a3c7bca55bd0673da",
+    "115001/115001_ECG.dat": "50f477d15c27ee928d91f49e1010452b410b0419e9fdb692bf488242c3d6af5a",
+    "115001/115001_ACC.hea": "b2115eda5edb64b9182b0c8c0c98922186a63c8159ab088aae3785df0d5d99f3",
+    "115001/115001_ACC.dat": "9b7481e2461e59adfd91d71e8014f3bb1876e35e167acd0c2ebe1db4e345d363",
+    "115001/115001_ANN.csv": "37dec167c381f8df1fe7e979ca203014d4d8c20f7eb52bd71145951ebb5adad1",
+    "123001/123001_ECG.hea": "29011762bbaa4a0e4481351e1e48f1714b23255839a2e3dd0ef0b5a8d0283a60",
+    "123001/123001_ECG.dat": "36b9190e66b1b43c96edf041e972f8202a8578bc29edacbd91829a4c096e656f",
+    "123001/123001_ACC.hea": "b464dd0aff0b94211913542afee7f89fceb71da1ebc911c36ea19d81fc58422a",
+    "123001/123001_ACC.dat": "aa804a06e86edf23a942af126be49772990842aa0b2f2ce246f2d1ccf86d11f9",
+    "123001/123001_ANN.csv": "3745385370cdde3ecd71e27d1a228fce6aa29fb4cb370ed1bfa6401a42639b12",
+    "125001/125001_ECG.hea": "e374d5cd66c7dcc694c3a8a102106a39ae9e918333b70f774ccc18fa6738ce77",
+    "125001/125001_ECG.dat": "9e0b10551be6e327e92796473a22082dc82586beb3985d07ba14d313778b220a",
+    "125001/125001_ACC.hea": "29d7373dc54d7ca474b9037a3a7998fdb05444d6f016578ec89d20d772ba5288",
+    "125001/125001_ACC.dat": "690bffb682677ff2e56b7b2e3ea5bff24d95cf069d1a10c5e16eb8d073032006",
+    "125001/125001_ANN.csv": "992632910f1ac206dcc56fb9297b7fd6d4bcaa5c33c8900a53e145e9c7c686e2",
+    "126001/126001_ECG.hea": "9c14c6a5b79d085bc504f070f5c8b248e17005d49808546de8e8b6eda52a5b45",
+    "126001/126001_ECG.dat": "a3cfef54d3bb6e6267feb214df74aa563e3c98347525b995f9afda9b7c657a48",
+    "126001/126001_ACC.hea": "f3ffa1c60bda2b21f46651364afd56d258c6d7a491773e7a815c4d26d20acc32",
+    "126001/126001_ACC.dat": "88b5640ee0584ca5de56eb52c0afbd66249c8eb9668a1277c466322e48666dba",
+    "126001/126001_ANN.csv": "70c0bc0b1f5ac2777f883c84f3a0548449808ee1dca19bc55d204b51bc1c90c1"
+  },
+  "bundle_sha256": "0b0adf27512aa4812d43f4fcc9214d7e8faed6a321c635a0b30a75925cda45df",
+  "reference_predictions_sha256": "445f17ee3a56a5dab846467fd62a094551de434db0e6553f0ad077a9aa216e6d",
+  "records": [
+    "104001",
+    "114001",
+    "115001",
+    "123001",
+    "125001",
+    "126001"
+  ],
+  "subjects": [
+    "104",
+    "114",
+    "115",
+    "123",
+    "125",
+    "126"
+  ],
+  "rows_rebuilt_from_consensus_and_raw_samples": 2739,
+  "same_identifiers_and_reference_labels": true,
+  "same_2739_class_predictions": true,
+  "probability_maximum_absolute_difference": 1.2212453270876722e-15,
+  "probability_tolerance": {
+    "rtol": 1e-12,
+    "atol": 1e-12
+  },
+  "confusion_matrix": [
+    [
+      1480,
+      762,
+      6
+    ],
+    [
+      22,
+      285,
+      19
+    ],
+    [
+      0,
+      3,
+      162
+    ]
+  ],
+  "metrics": {
+    "accuracy": 0.7035414384811975,
+    "balanced_accuracy": 0.838138099992127,
+    "f1_macro": 0.7080106882781302
+  },
+  "historical_training_reproduced": false
+}

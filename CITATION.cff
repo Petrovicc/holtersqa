@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this software using the paper snapshot version and the release URL."
+title: "QualiECG: Quality-Aware ECG Telemonitoring Framework"
+type: software
+authors:
+  - family-names: "Petrović"
+    given-names: "Nikola"
+    affiliation: "Faculty of Technical Sciences, University of Novi Sad"
+version: "0.1.0"
+date-released: 2026-11-11
+repository-code: "https://github.com/Petrovicc/quali-ecg"
+keywords:
+  - electrocardiography
+  - signal quality
+  - telemonitoring
+  - machine learning
